@@ -14,15 +14,15 @@ class CreaAgenteaduanal extends Migration
     {
         Schema::create('agencias', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Nombre_agencia',50);
-            $table->string('Gerente_agencia',50);
-            $table->string('Jefe_operaciones',50);
-            $table->string('Direccion',50);
-            $table->integer('Telefono',50);
-            $table->string('Correo_gte',50);
-            $table->string('Correo_operaciones',50);
-            $table->string('Correo_administracion',50);
-            $table->string('Jefe_administracion',50);
+            $table->string('Nombre_agencia', 50);
+            $table->string('Gerente_agencia', 50);
+            $table->string('Jefe_operaciones', 50);
+            $table->string('Direccion', 50);
+            $table->integer('Telefono');
+            $table->string('Correo_gte', 50);
+            $table->string('Correo_operaciones', 50);
+            $table->string('Correo_administracion', 50);
+            $table->string('Jefe_administracion', 50);
             $table->timestamps();
         });
     }
