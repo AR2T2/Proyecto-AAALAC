@@ -49,9 +49,9 @@ class CrearRegistro extends Migration
             $table->string('Patente',4);
             $table->string('Correo_aa');
             $table->integer('registros_id')->unsigned(); // llave foranea de status
-            $table->foreign('registros_id')->references(id)->on('registros');            
+            $table->foreign('registros_id')->references('id')->on('registros');            
             $table->integer('status_id')->unsigned(); // llave foranea de status
-            $table->foreign('status_id')->references(id)->on('status');
+            $table->foreign('status_id')->references('id')->on('status');
             $table->timestamps();
         });
         // sexta tabla
@@ -67,11 +67,11 @@ class CrearRegistro extends Migration
             $table->string('Correo_administracion', 50);
             $table->string('Jefe_administracion', 50);
             $table->integer('agentes_id')->unsigned(); // llave foranea de agentes aduanales
-            $table->foreign('agentes_id')->references(id)->on('agentes');
+            $table->foreign('agentes_id')->references('id')->on('agentes');
             $table->integer('servicios_id')->unsigned(); // llave foranea de servicios
-            $table->foreign('servicios_id')->references(id)->on('servicios');
+            $table->foreign('servicios_id')->references('id')->on('servicios');
             $table->integer('usuariosaaalac_id')->unsigned(); // llave foranea de usuarios
-            $table->foreign('usuariosaaalac_id')->references(id)->on('usuariosaaalac');
+            $table->foreign('usuariosaaalac_id')->references('id')->on('usuariosaaalac');
             $table->timestamps();
         });
     }
