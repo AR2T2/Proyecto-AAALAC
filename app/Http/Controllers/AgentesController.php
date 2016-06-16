@@ -16,6 +16,7 @@ class AgentesController extends Controller
     public function index()
     {
         //
+        return view('vAgentes',compact(agentes));
     }
 
     /**

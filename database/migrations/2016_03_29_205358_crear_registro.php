@@ -46,6 +46,7 @@ class CrearRegistro extends Migration
         Schema::create('agentes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('Nombre_agente_aduanal');
+            $table->date('Fecha_inscripcion');
             $table->string('Patente',4);
             $table->string('Correo_aa');
             $table->integer('registros_id')->unsigned(); // llave foranea de status
