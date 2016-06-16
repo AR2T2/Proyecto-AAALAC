@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('Agentes','AgentesController');
+Route::resource('Agencias','AgenciasController');
